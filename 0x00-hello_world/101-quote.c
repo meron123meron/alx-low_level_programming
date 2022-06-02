@@ -1,12 +1,15 @@
 #include <stdio.h>
 /**
- * main - main block
- * Return:0
+ * main - Entry point
+ * Return:1
  */
 int main(void)
+
 {
-	fprintf(stderr, RED "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 
-return (0);
+fwrite("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59, 1, stderr);
 
-}
+		return (1);
+
+		}
+ 
