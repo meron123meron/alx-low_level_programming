@@ -1,11 +1,12 @@
 #include <stdio.h>
-/**
- * main - main block
- * Return: 0
- */
-int main(void) {
+#include <string.h>
 
-	puts("Programming is like building a multilingual puzzle\n");
+int main(void)
+{
+
+	char str1[] = "Programming is like building a multilingual puzzle ";
+
+	puts(str1);
 
 return 0;
 }
