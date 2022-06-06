@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print 012, 013, 
+ * main - print 012, 013,
  *
  * Return:0
  */
@@ -13,7 +13,7 @@ for (b = 49 ; b <= 56 ; b++)
 {
 for (c = 50 ; c <= 57 ; c++)
 {
-if ((a < b) || (a < c) || (b < c))
+if (a < b && a < c && b < c)
 {
 putchar(a);
 putchar(b);
