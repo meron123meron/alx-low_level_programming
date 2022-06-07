@@ -6,6 +6,7 @@
  * print alphabet
  * Return:0
  */
+// prints alphabet in lowercase
 void print_alphabet(void)
 {
 int x;
