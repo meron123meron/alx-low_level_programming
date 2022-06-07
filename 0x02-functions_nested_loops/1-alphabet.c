@@ -2,11 +2,10 @@
 #include "main.h"
 /**
  * main - main block
- * print_alphabet - prints alphabets 
+ * Description: print_alphabet - prints alphabets
  * print alphabet
  * Return:0
  */
-
 void print_alphabet(void)
 {
 int x;
