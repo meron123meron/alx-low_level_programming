@@ -2,11 +2,9 @@
 #include "main.h"
 /**
  * main - main block
- * Description: print_alphabet - prints alphabets
- * print alphabet
- * Return:0
+ * alphabet - prints alphabets
+ * Return:void
  */
-// prints alphabet in lowercase
 void print_alphabet(void)
 {
 int x;

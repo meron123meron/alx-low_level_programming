@@ -2,10 +2,9 @@
 #include "main.h"
 /**
  * main -main block
- * prints alphabet 10 times
- * Return:0
+ * print_alphabet_x10 - prints alphabet 10 times in different lines
+ * Return:void
  */
-//prints alphabets 10 times
 void print_alphabet_x10(void)
 {
 int y, z;
