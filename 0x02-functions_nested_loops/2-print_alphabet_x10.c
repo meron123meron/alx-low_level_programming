@@ -3,6 +3,7 @@
 /**
  * main - main block
  * print_alphabet_x10 - prints alphabet 10 times in different lines
+ *
  * Return:void
  */
 void print_alphabet_x10(void)
