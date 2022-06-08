@@ -4,7 +4,6 @@
  * add - adds two numbers
  * @a:character used
  * @b:character used
- * @c:character used
  * Return:0
  */
 int add(int a, int b)
