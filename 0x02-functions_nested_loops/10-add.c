@@ -4,8 +4,9 @@
  * add - adds two numbers
  * Return:0
  */
-int add(int, int)
+int add(int a, int b)
 {
-int a, b;
-_putchar(a + b);
+int c = a + b;
+_putchar(c);
+return (0);
 }
