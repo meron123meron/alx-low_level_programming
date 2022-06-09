@@ -32,8 +32,8 @@ int main(void)
 
 						        {
 
-								                putchar(i); //i never increments so this is the error
-
+								                putchar(i);
+//error
 										        }
 
 
