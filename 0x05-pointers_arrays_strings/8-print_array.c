@@ -8,7 +8,7 @@
  */
 void print_array(int *a, int n)
 {
-int i = n -1;
+int i = n - 1;
 for (i = 0; i != '\0'; i++)
 {
 printf(" %d ", a[i]);
