@@ -3,7 +3,7 @@
  * _strncpy - copies a string
  * @dest: pointer used
  * @src: pointer used
- * @n: integer 
+ * @n: integer used
  * Return: some value
  */
 char *_strncpy(char *dest, char *src, int n)
