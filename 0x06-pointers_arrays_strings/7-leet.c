@@ -11,23 +11,23 @@ while (n[i] != '\0')
 {
 if (n[i] == 'a' && n[i] == 'A')
 {
-_putchar(4);
+n[i] = 4;
 }
 else if (n[i] == 'e' && n[i] == 'E')
 {
-_putchar(3);
+n[i] = 3;
 }
 else if (n[i] == 'o' && n[i] =='O')
 {
-_putchar(0);
+n[i] = 0;
 }
 else if (n[i] == 't' && n[i] == 'T')
 {
-_putchar(7);
+n[i] = 7;
 }
 else if (n[i] == 'l' && n[i] == 'L')
 {
-_putchar(1);
+n[i] = 1;
 }
 else
 {
@@ -36,4 +36,5 @@ n[i] = n[i] - 30;
 i++;
 }
 return (n);
+
 }
