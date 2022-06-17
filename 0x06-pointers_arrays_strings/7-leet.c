@@ -6,35 +6,19 @@
  */
 char *leet(char *n)
 {
-int i = 0;
+int i = 0, z;
+char a[] = "aAeEoOtTlL";
+char b[] = "4433007711";
 while (n[i] != '\0')
 {
-if (n[i] == 'a' && n[i] == 'A')
+for (z = 0; z <= 9; z++)
 {
-n[i] = 4;
+if (a[z] == n[i])
+{
+n[i] = b[z];
 }
-else if (n[i] == 'e' && n[i] == 'E')
-{
-n[i] = 3;
-}
-else if (n[i] == 'o' && n[i] =='O')
-{
-n[i] = 0;
-}
-else if (n[i] == 't' && n[i] == 'T')
-{
-n[i] = 7;
-}
-else if (n[i] == 'l' && n[i] == 'L')
-{
-n[i] = 1;
-}
-else
-{
-n[i] = n[i] - 30;
 }
 i++;
 }
 return (n);
-
 }
