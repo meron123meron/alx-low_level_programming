@@ -15,6 +15,6 @@ else if (n == 0)
 {
 return (1);
 }
-a = n *factorial(n - 1);
+a = n * factorial(n - 1);
 return (a);
 }
