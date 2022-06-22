@@ -13,5 +13,5 @@ _print_rev_recursion(++s);
 _putchar(*s);
 
 }
-return;
+
 }
