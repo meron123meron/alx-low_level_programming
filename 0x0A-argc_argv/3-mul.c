@@ -5,9 +5,9 @@
  * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array
- * Return: some value
+ * Return:1
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[])i
 {
 if (argc == 3)
 {
