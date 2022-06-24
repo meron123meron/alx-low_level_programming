@@ -2,8 +2,9 @@
 #include <stdio.h>
 /**
  * main - prints its name
- *
- * Return:some value
+ * @argc: number of arguments
+ * @argv: array
+ * Return: some value
  */
 int main(int argc, char *argv[])
 {
