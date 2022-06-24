@@ -7,11 +7,13 @@
  * @argv: array
  * Return: some value
  */
-int main(int argc, char *argv[])i
+int main(int argc, char *argv[])
 {
 if (argc == 3)
 {
-printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+int a = atoi(argv[1]) * atoi(argv[2]);
+
+printf("%d\n", a);
 }
 else
 {
