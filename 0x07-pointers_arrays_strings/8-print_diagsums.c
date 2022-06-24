@@ -15,11 +15,11 @@ for (z = 0; z < size; z++)
 {
 if ( x == z)
 {
-d1 = d1 + a[x][z];// it shows error
+d1 = d1 + a[x + z];
 }
 else
 {
-d2 = d2 + a[x + 1][z - 1];// it shows error
+d2 = d2 + a[x + 1][z - 1];
 }
 }
 printf("%d%d",d1,d2);
