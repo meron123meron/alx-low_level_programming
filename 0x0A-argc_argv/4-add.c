@@ -7,20 +7,20 @@
  * @argv: array
  * Return: some value
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-int i = 0, sum = 0;
-if (argc > 2)
-{
-for (i = 0; i < argc; i++)
-{
-sum = sum + atoi(argv[i]);
-printf("%d\n", sum);
-}
-}
-if (i == 1)
+int i, sum = 0;
+if (argc == 1)
 {
 printf("0\n");
+}
+else if (argc > 2)
+{
+for (i = 1; i < argc; i++)
+{
+sum = sum + atoi(argv[i]);
+}
+printf("%d\n", sum);
 }
 else
 {
