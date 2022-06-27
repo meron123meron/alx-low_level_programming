@@ -28,4 +28,5 @@ n++;
 str++;
 }
 return (p);
+free (p);
 }
