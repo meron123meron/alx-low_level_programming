@@ -15,7 +15,8 @@ if (str == NULL)
 {
 return (NULL);
 }
-p = malloc(sizeof(char) * size);
+size = strlen(str);
+p = malloc(sizeof(char) * size + 1);
 if (p == NULL)
 {
 return (NULL);
@@ -27,6 +28,5 @@ while (*str)
 n++;
 str++;
 }
-*n = '\0';
 return (p);
 }
