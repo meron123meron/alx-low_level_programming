@@ -13,10 +13,18 @@ int size;
 char *p;
 strcat(s1, s2);
 size = strlen(s1);
-p = malloc(sizeof(char) * size);
+p = (char *)malloc(sizeof(char) * size + 1);
 if (p == NULL)
 {
 return (NULL);
 }
-return (s1);
+
+while (*s1)
+{
+*p = *s1;
+p++;
+s1++;
+}
+
+return (p);
 }
