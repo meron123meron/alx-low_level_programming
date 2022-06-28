@@ -27,6 +27,5 @@ while (*str)
 n++;
 str++;
 }
-*n = '\0';
 return (p);
 }
