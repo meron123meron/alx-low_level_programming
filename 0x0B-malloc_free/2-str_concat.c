@@ -9,16 +9,19 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+char *p = NULL;
 int j = 0, i = 0, n;
 unsigned int x;
-char *p = NULL;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
 for (; s1[i] != '\0'; i++)
+{
+}
 for (; s2[j] != '\0'; j++)
-
+{
+}
 p = (char *)malloc(sizeof(char) * (i + j + 1));
 if (p == NULL)
 {
