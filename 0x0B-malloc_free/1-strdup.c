@@ -10,7 +10,6 @@ char *_strdup(char *str)
 {
 int size;
 char *p, *n;
-size = strlen(str);
 if (str == NULL)
 {
 return (NULL);
@@ -28,5 +27,6 @@ while (*str)
 n++;
 str++;
 }
+*n = '\0';
 return (p);
 }
