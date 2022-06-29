@@ -13,7 +13,7 @@ if (grid != NULL)
 for (;height >= 0; height--)
 {
 free(grid[height]);
-free(grid);
 }
+free(grid);
 }
 }
