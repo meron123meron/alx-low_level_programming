@@ -14,7 +14,5 @@ if (p != NULL)
 {
 return (p);
 }
-else
-free(p);
 exit (98);
 }
