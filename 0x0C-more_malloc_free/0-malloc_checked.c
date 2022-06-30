@@ -14,5 +14,5 @@ if (p != NULL)
 {
 return (p);
 }
-exit (98);
+exit(98);
 }
