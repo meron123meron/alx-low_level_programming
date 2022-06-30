@@ -13,8 +13,8 @@ p = malloc(b);
 if (p != NULL)
 {
 return (p);
-free(p);
 }
 else
+free(p);
 exit (98);
 }
