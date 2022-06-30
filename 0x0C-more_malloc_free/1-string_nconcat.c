@@ -26,9 +26,7 @@ for (i = 0; s1[i] != '\0'; i++)
 
 }
 if (n >= strlen(s2))
-{
 n = strlen(s2);
-}
 p = malloc(sizeof(char) * (i + n + 1));
 if (p == NULL)
 {
