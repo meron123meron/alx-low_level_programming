@@ -37,13 +37,16 @@ for (i = 0; s1[i] != '\0'; i++)
 {
 p[i] = s1[i];
 }
-for (j = 0; j <= n; j++, i++)
-{
-p[i] = s2[j];
-}
 if (n >= strlen(s2))
 {
 for (j = 0; s2[j] != '\0'; j++)
+{
+p[i] = s2[j];
+}
+}
+else
+{
+for (j = 0; j <= n; j++, i++)
 {
 p[i] = s2[j];
 }
