@@ -14,7 +14,7 @@ if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-p = malloc(nmemb * sizeof(size));
+p = calloc(nmemb, sizeof(size));
 if (p == NULL)
 {
 return (NULL);
