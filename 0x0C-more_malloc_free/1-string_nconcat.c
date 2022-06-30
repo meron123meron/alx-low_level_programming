@@ -21,12 +21,10 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-for (i = 0; s1[i] != '\0'; i++)
-{
-}
+
 if (n >= strlen(s2))
 n = strlen(s2);
-length = i + n + 1;
+length = strlen(s1) + n + 1;
 p = malloc(sizeof(char) * length);
 if (p == NULL)
 {
