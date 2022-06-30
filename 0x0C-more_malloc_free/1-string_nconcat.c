@@ -21,35 +21,28 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-
 for (i = 0; s1[i] != '\0'; i++)
 {
 
-}
-p = malloc(sizeof(char) * (i + n + 1));
-
-if (p == NULL)
-{
-return (NULL);
-}
-
-for (i = 0; s1[i] != '\0'; i++)
-{
-p[i] = s1[i];
 }
 if (n >= strlen(s2))
 {
 for (j = 0; s2[j] != '\0'; j++)
 {
-p[i] = s2[j];
 }
 }
-else
+p = malloc(sizeof(char) * (i + n + 1));
+if (p == NULL)
 {
+return (NULL);
+}
+for (i = 0; s1[i] != '\0'; i++)
+{
+p[i] = s1[i];
+}
 for (j = 0; j <= n; j++, i++)
 {
 p[i] = s2[j];
-}
 }
 return (p);
 }
