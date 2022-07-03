@@ -21,12 +21,13 @@ return (NULL);
 }
 else if (p != NULL)
 {
-if (min < max)
+while (min < max)
 {
-p++;
-}
+min = min + 1;
 return (p);
 }
-free(p);
+
+}
+
 return (0);
 }
