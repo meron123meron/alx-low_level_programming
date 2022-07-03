@@ -9,7 +9,7 @@
  */
 int *array_range(int min, int max)
 {
-int *p;
+int *p, i;
 if (min > max)
 {
 return (NULL);
@@ -19,15 +19,13 @@ if (p == NULL)
 {
 return (NULL);
 }
-else if (p != NULL)
+if (min < max)
 {
-while (min < max)
+for (i = 0; i < max; i++)
 {
-min = min + 1;
+*p = min + i;
 return (p);
 }
-
 }
-
 return (0);
 }
