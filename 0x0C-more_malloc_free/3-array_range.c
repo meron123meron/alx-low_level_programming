@@ -21,9 +21,6 @@ if (p == NULL)
 return (NULL);
 }
 for (i = 0; i < size; i++)
-{
-*p = min + 1;
-
-}
+p[i] = min++;
 return (p);
 }
