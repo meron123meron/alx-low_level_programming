@@ -1,4 +1,7 @@
+#include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
  * init_dog - is the function consisting the struct
  * struct dog - is a struct with 4 members
@@ -9,10 +12,12 @@
  * Description:
  */
 
-struct dog
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-struct dog *d;
-char *name;
-float age;
-char *owner;
-};
+while (d)
+{
+d->name = name;
+d->age = age;
+d->owner = owner;
+}
+}
