@@ -18,10 +18,6 @@ if (d->name == NULL)
 {
 printf("Name: (nil) \n");
 }
-if (d->age == 0.00)
-{
-printf("Age: (nil) \n");
-}
 if (d->owner == NULL)
 {
 printf("Owner: (nil) \n");
