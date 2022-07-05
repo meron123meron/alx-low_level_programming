@@ -16,15 +16,15 @@ printf("Owner: %s\n", d->owner);
 }
 if (d->name == NULL)
 {
-printf("Name: (nil) ");
+printf("Name: (nil) \n");
 }
 if (d->age == 0.00)
 {
-printf("Age: (nil) ");
+printf("Age: (nil) \n");
 }
 if (d->owner == NULL)
 {
-printf("Owner: (nil) ");
+printf("Owner: (nil) \n");
 }
 if (d == NULL)
 {
