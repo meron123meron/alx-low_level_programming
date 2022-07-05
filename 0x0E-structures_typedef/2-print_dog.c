@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_dog - is a function that prints a struct
- * struct dog - is a struct with 4 members
+ * struct dog - is a struct with 3 members
  * @d: is a pointer and the first member of the struct
  * Description:
  */
@@ -14,7 +14,7 @@ printf("Name: %s\n", d->name ? d->name : "(nil)");
 printf("Age: %f\n", d->age);
 printf("Owner: %s\n", d->owner ? d->owner : "(nil)");
 }
-if (d == NULL)
+else
 {
 printf(" ");
 }
