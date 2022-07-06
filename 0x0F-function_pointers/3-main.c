@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
 /**
  * main - main function
@@ -6,7 +7,8 @@
  */
 int main(void)
 {
-
-(*get_op_func(ops))(a, b);
+char *ops = "+";
+get_op_func(ops);
+printf("%d\n", atoi(ops));
 return (0);
 }

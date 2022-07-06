@@ -20,9 +20,9 @@ int i;
 
 for (i = 0; i < 5; i++)
 {
-if (s = ops[i].op)
+if (s == ops[i].op)
 {
-printf("%d\n", ops[i].f);
+return (ops[i].f);
 }
 }
 return (0);
