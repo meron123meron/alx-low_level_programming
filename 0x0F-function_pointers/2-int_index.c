@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "function_pointers.h"
+#include <stdbool.h>
 /**
  * int_index - is a function which searches for an integer
  * @array: array of 20 elements
@@ -20,7 +21,7 @@ if (cmp != 0 && array != 0)
 for (i = 0; i < size; i++)
 {
 cmp(array[i]);
-if (cmp(array[i]) == 0)
+if (cmp(array[i]) == true)
 {
 return (i);
 }
