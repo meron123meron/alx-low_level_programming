@@ -11,22 +11,27 @@ void print_all(const char * const format, ...)
 {
 va_list args;
 unsigned int i;
+char *x;
+int k;
+
 char *separator = ", ";
 unsigned int n = 0;
-va_start(args, n);
+va_start(args, format);
 for (i = 0; i < n; i++)
 {
-format = va_arg(args, int);
-format = va_arg(args, char);
-format = va_arg(args, char *);
-if (format == NULL)
+k = va_arg(args, int);
+x = va_arg(args, char *);
+if (x == NULL)
 printf("(nil)");
 else
 {
 if (i < (n - 1))
-printf("%s%s", format, separator);
+{
+printf("%d%s", k, separator);
+printf("%s%s", x, separator);
+}
 else
-printf("%s", format);
+printf("%s", x);
 }
 }
 printf("\n");
