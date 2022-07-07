@@ -19,9 +19,9 @@ for (i = 0; i < n; i++)
 x = va_arg(args, int);
 if (separator != 0 && i < (n - 1))
 printf("%d%s", x, separator);
-else if (i == (n - 1))
+else
 printf("%d", x);
 }
-va_end(args);
 printf("\n");
+va_end(args);
 }
