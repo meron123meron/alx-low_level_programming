@@ -19,10 +19,13 @@ for (i = 0; i < n; i++)
 x = va_arg(args, char *);
 if (x == NULL)
 printf("(nil)\n");
+else
+{
 if (separator != 0 && i < (n - 1))
 printf("%s%s", x, separator);
 else
 printf("%s", x);
+}
 }
 printf("\n");
 va_end(args);
