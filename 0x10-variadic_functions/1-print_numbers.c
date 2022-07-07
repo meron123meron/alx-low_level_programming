@@ -22,6 +22,6 @@ printf("%d%s", x, separator);
 else if (i == (n - 1))
 printf("%d", x);
 }
-printf("\n");
 va_end(args);
+printf("\n");
 }
