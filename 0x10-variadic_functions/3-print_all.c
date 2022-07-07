@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
@@ -10,14 +11,13 @@
 void print_all(const char * const format, ...)
 {
 va_list args;
-unsigned int i;
+int i;
 char *x;
 int k;
 
 char *separator = ", ";
-unsigned int n = 0;
 va_start(args, format);
-for (i = 0; i < n; i++)
+for (i = 0; i < atoi(format); i++)
 {
 k = va_arg(args, int);
 x = va_arg(args, char *);
@@ -25,7 +25,7 @@ if (x == NULL)
 printf("(nil)");
 else
 {
-if (i < (n - 1))
+if (i < (atoi(format) - 1))
 {
 printf("%d%s", k, separator);
 printf("%s%s", x, separator);
