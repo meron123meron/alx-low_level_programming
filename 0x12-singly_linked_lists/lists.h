@@ -7,7 +7,8 @@
  * @len: length of the string
  * @next: points to the next node
  * Description: singly linked list node structure
- * The constructor attribute causes the function to be called automatically before execution enters main ()
+ * The constructor attribute causes the function to be called
+ * automatically before execution enters main ()
  */
 
 typedef struct list_s
