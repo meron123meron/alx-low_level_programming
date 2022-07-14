@@ -16,6 +16,7 @@ if (p == NULL)
 return (NULL);
 }
 p->str = strdup(str);
+p->len = strlen(str);
 p->next = NULL;
 
 p->next = *head;
