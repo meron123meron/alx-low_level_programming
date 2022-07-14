@@ -20,10 +20,17 @@ return (NULL);
 p->str = strdup(str);
 p->len = strlen(str);
 p->next = NULL;
+if (*head == NULL)
+{
+*head = p;
+}
+else
+{
 while (m->next != NULL)
 {
 m = m->next;
 }
 m->next = p;
+}
 return (p);
 }
