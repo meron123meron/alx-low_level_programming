@@ -22,7 +22,7 @@ h = h->next;
 }
 else
 {
-printf("%s[%u]\n", h->str, h->len);
+printf("[%u] %s\n", h->len, h->str);
 c++;
 h = h->next;
 }
