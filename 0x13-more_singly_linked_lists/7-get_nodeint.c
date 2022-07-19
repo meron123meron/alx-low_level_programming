@@ -20,6 +20,8 @@ else
 for (i = 0; i < index; i++)
 {
 p = p->next;
+if (p == NULL)
+return (NULL);
 }
 }
 return (p);
