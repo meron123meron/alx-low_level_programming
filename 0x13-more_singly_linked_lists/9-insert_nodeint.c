@@ -27,13 +27,10 @@ if (b == NULL)
 free(b);
 return (NULL);
 }
-else
-{
 while (idx != i)
 {
 p = p->next;
 i++;
-}
 }
 b->next = p->next;
 p->next = b;
