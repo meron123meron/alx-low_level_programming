@@ -15,8 +15,10 @@ listint_t *p = *head;
 listint_t *b = malloc(sizeof(listint_t));
 b->n = n;
 b->next = NULL;
+
 if (b == NULL)
 {
+free(b);
 return (NULL);
 }
 else
@@ -26,8 +28,13 @@ while (idx != i)
 p = p->next;
 i++;
 }
-}
 b->next = p->next;
 p->next = b;
+}
+if (p == NULL)
+{
+free(p);
+return (NULL);
+}
 return (b);
 }
