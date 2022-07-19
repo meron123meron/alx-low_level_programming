@@ -15,7 +15,13 @@ listint_t *p = *head;
 listint_t *b = malloc(sizeof(listint_t));
 b->n = n;
 b->next = NULL;
-
+if (p == NULL)
+{
+free(p);
+return (NULL);
+}
+else
+{
 if (b == NULL)
 {
 free(b);
@@ -29,13 +35,6 @@ p = p->next;
 i++;
 }
 }
-if (p == NULL)
-{
-free(p);
-return (NULL);
-}
-else
-{
 b->next = p->next;
 p->next = b;
 return (b);
