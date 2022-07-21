@@ -13,14 +13,14 @@ int j;
 len = strlen(b);
 if (b == NULL)
 return (0);
-else if (b[i] != '0' && b[i] != '1')
-return (0);
 for (j = (len - 1); j >= 0; j--, i++)
 {
 if (b[i] == '1')
 {
 sum = sum + power(2, j);
 }
+else if (b[i] != '0' && b[i] != '1')
+return (0);
 }
 return (sum);
 }
