@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 /**
  * binary_to_uint - converts a binary number to an unsigned int
@@ -44,7 +43,7 @@ return (p);
  * @s: pointer
  * Return: integer value
  */
-int _strlen(const char * s)
+int _strlen(const char *s)
 {
 int p;
 for (p = 0; s[p] != '\0'; p++)
