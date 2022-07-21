@@ -32,10 +32,10 @@ return (sum);
  */
 unsigned int power(unsigned int a, unsigned int b)
 {
-unsigned int i, p =1;
+unsigned int i, p = 1;
 for (i = b; i > 0; i--)
 {
-p = p * a;
+p = p *a;
 }
 return (p);
 }
