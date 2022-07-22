@@ -7,14 +7,14 @@
  */
 void print_binary(unsigned long int n)
 {
-unsigned long int s = 0;
-unsigned long int re, i = 1;
-while (n != 0)
+unsigned long int r;
+int s;
+for (s = 10; s >= 0; s--)
 {
-re = n % 2;
-n = n / 2;
-s = s + re * i;
-i = i * 10;
+r = n >> s;
+if (r & 1)
+_putchar('1');
+else
+_putchar('0');
 }
-_putchar(s);
 }
