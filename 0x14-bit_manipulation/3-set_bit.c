@@ -9,10 +9,10 @@
 int set_bit(unsigned long int *n, unsigned int index)
 {
 int s = 1 << index;
-while (index)
+while (index > 32)
 {
+return (-1);
+}
 *n = (*n & ~s) | ((1 << index) & s);
 return (1);
-}
-return (-1);
 }
