@@ -13,6 +13,8 @@ int fd, fd_write, len;
 len = strlen(text_content);
 if (filename == NULL)
 return (-1);
+if (text_content == NULL)
+return (1);
 fd = open(filename, O_CREAT | O_RDWR, 0600);
 if (fd == -1)
 return (-1);
