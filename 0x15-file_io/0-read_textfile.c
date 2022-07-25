@@ -18,20 +18,14 @@ char *buf;
 buf = malloc(sizeof(char) * letters);
 if (buf == NULL)
 return (0);
-if (filename != NULL)
-{
+if (filename == NULL)
+return (0);
 file = open("task0", O_RDONLY);
 if (file == -1)
 return (0);
 read(file, buf, letters);
 close(file);
-file = open("task0", O_CREAT | O_WRONLY, 0600);
-if (file == -1)
-return (0);
-write_file = write(file, buf, letters);
+write_file = write(STDOUT_FILENO, buf, letters);
 close(file);
 return (write_file);
-}
-else
-return (0);
 }
