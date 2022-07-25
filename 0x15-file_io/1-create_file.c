@@ -22,5 +22,5 @@ fd_write = write(fd, text_content, len);
 if (fd_write == -1)
 return (-1);
 close(fd);
-return(1);
+return (1);
 }
