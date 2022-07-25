@@ -20,12 +20,13 @@ if (buf == NULL)
 return (0);
 if (filename == NULL)
 return (0);
-file = open("task0", O_RDONLY);
+file = open(filename, O_RDONLY);
 if (file == -1)
 return (0);
 read(file, buf, letters);
-close(file);
+
 write_file = write(STDOUT_FILENO, buf, letters);
 close(file);
+free(buf);
 return (write_file);
 }
