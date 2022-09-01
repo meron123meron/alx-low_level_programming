@@ -21,7 +21,7 @@ if (p == NULL)
 return (NULL);
 p = p->next;
 }
-if (p->next == NULL)
+if (p == NULL)
 return (add_dnodeint_end(h, n));
 s = malloc(sizeof(dlistint_t));
 if (s == NULL)
