@@ -11,13 +11,11 @@ dlistint_t *p;
 unsigned int i = 0;
 
 p = head;
-if (head == NULL)
+if (p == NULL)
 return (NULL);
 
-while (i != index)
-{
+for (i = 0; i != index; i++)
 p = p->next;
-i++;
-}
+
 return (p);
 }
