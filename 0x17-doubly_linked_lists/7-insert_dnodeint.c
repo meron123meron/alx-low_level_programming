@@ -15,7 +15,7 @@ p = *h;
 if (idx == 0)
 return (add_dnodeint(h, n));
 
-while (i != idx)
+for (i = 0; i != idx; i++)
 {
 if (p == NULL)
 return (NULL);
@@ -27,9 +27,9 @@ s = malloc(sizeof(dlistint_t));
 if (s == NULL)
 return (NULL);
 s->n = n;
-s->prev = NULL;
-s->next = NULL;
-p->next = s;
 s->prev = p;
+s->next = p->next;
+p->next->prev = s;
+p->next = s;
 return (s);
 }
