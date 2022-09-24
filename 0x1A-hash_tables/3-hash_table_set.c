@@ -12,7 +12,7 @@ unsigned long int index, size;
 
 hash_node_t *new_node;
 
-if (ht  == NULL || key == NULL || value == NULL)
+if (ht  == NULL || key == NULL)
 
 return (0);
 
