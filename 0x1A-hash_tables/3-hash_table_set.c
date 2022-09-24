@@ -16,7 +16,7 @@ size = ht->size;
 
 index = key_index((const unsigned char *)key, size);
 
-if (ht  == NULL || key == NULL)
+if (ht  == NULL || key == NULL || value == NULL)
 
 return (0);
 
