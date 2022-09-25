@@ -11,11 +11,15 @@ unsigned long int i = 0;
 if (ht != NULL)
 {
 printf("{");
-c = ht->array[i];
 for (i = 0; i < ht->size; i++)
 {
-printf("%s : %s", c->key, c->value);
+c = ht->array[i];
+while (c != NULL)
+{
+printf("'%s' : '%s'", c->key, c->value);
+printf(", ");
 c = c->next;
+}
 }
 printf("}\n");
 }
